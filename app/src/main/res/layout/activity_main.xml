@@ -10,8 +10,83 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.introtoandroid.stockquotes_bundy.MainActivity">
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/button" />
+
+    <Button
+        android:text="@string/goButtonTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="43dp"
+        android:id="@+id/button" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="@string/enterStockTvTxt"
+        android:layout_alignBaseline="@+id/editText"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_toStartOf="@+id/button"
+        android:id="@+id/enterTV" />
+
+    <TextView
+        android:text="@string/symbolTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/symbolTV"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/editText"
+        android:layout_alignEnd="@+id/enterTV" />
+
+    <TextView
+        android:text="@string/nameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/symbolTV"
+        android:layout_alignEnd="@+id/symbolTV"
+        android:layout_marginTop="24dp"
+        android:id="@+id/nameTV" />
+
+    <TextView
+        android:text="@string/lastTradePriceTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameTV"
+        android:layout_alignEnd="@+id/nameTV"
+        android:layout_marginTop="27dp"
+        android:id="@+id/ltpTV" />
+
+    <TextView
+        android:text="@string/lastTradeTimeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ltpTV"
+        android:layout_alignEnd="@+id/ltpTV"
+        android:layout_marginTop="25dp"
+        android:id="@+id/lttTV" />
+
+    <TextView
+        android:text="@string/changeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/changeTV"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/lttTV" />
+
+    <TextView
+        android:text="@string/weekRangeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/changeTV"
+        android:layout_alignEnd="@+id/changeTV"
+        android:layout_marginTop="26dp"
+        android:id="@+id/weekTV" />
 </RelativeLayout>

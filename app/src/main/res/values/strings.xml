@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">StockQuotes-Bundy</string>
+    <string name="enterStockTvTxt">Enter Stock Symbol</string>
+    <string name="goButtonTxt">Go</string>
+    <string name="symbolTxt">Symbol: </string>
+    <string name="nameTxt">Name: </string>
+    <string name="lastTradePriceTxt">Last Trade Price: </string>
+    <string name="lastTradeTimeTxt">Last Trade Time: </string>
+    <string name="changeTxt">Change: </string>
+    <string name="weekRangeTxt">52 Week Range: </string>
 </resources>
