@@ -166,12 +166,47 @@
 
     <TextView
         android:text="@string/empty"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/recent"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/one" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button"
+        android:layout_toEndOf="@+id/two"
+        android:layout_marginTop="14dp"
+        android:id="@+id/four"
+        android:visibility="invisible" />
+
+    <TextView
+        android:text="@string/recent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/recent"
         android:layout_above="@+id/button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="18dp"
-        android:id="@+id/textView7"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:visibility="visible" />
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:text="@string/empty"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/three"
+        android:layout_alignBaseline="@+id/two"
+        android:layout_alignBottom="@+id/two"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/empty"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/two"
+        android:layout_alignBaseline="@+id/one"
+        android:layout_alignBottom="@+id/one"
+        android:layout_toEndOf="@+id/button" />
+
 </RelativeLayout>

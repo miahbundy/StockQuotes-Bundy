@@ -8,5 +8,6 @@
     <string name="lastTradeTimeTxt">Last Trade Time: </string>
     <string name="changeTxt">Change: </string>
     <string name="weekRangeTxt">52 Week Range: </string>
-    <string name="empty"></string>
+    <string name="empty">""</string>
+    <string name="recent">Recent searches: </string>
 </resources>

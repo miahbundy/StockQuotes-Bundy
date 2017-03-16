@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main">
 
     <TextView
         android:layout_width="wrap_content"
@@ -131,17 +132,7 @@
 
     <TextView
         android:text="@string/empty"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:id="@+id/textView2"
-        android:layout_alignBaseline="@+id/nameTV"
-        android:layout_alignBottom="@+id/nameTV"
-        android:layout_alignStart="@+id/textView3" />
-
-    <TextView
-        android:text="@string/empty"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
         android:layout_alignBaseline="@+id/symbolTV"
@@ -159,6 +150,63 @@
         android:layout_alignBottom="@+id/lttTV"
         android:layout_toEndOf="@+id/lttTV"
         android:layout_marginStart="42dp" />
+
+    <TextView
+        android:text="@string/recent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_alignStart="@+id/symbolTV"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/recent" />
+
+    <TextView
+        android:text="@string/empty"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/recent"
+        android:layout_toEndOf="@+id/ltpTV"
+        android:id="@+id/one" />
+
+    <TextView
+        android:text="@string/empty"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/one"
+        android:layout_toEndOf="@+id/one"
+        android:layout_marginStart="32dp"
+        android:id="@+id/two" />
+
+    <TextView
+        android:text="@string/empty"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/three"
+        android:layout_alignBaseline="@+id/two"
+        android:layout_alignBottom="@+id/two"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_marginEnd="22dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/three"
+        android:layout_toEndOf="@+id/three"
+        android:layout_marginStart="20dp"
+        android:id="@+id/four"
+        android:visibility="invisible" />
+
+    <TextView
+        android:text="@string/empty"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:id="@+id/textView2"
+        android:layout_alignBaseline="@+id/changeTV"
+        android:layout_alignBottom="@+id/changeTV"
+        android:layout_alignEnd="@+id/two" />
 
 
 </RelativeLayout>
